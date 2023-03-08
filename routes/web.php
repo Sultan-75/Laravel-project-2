@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,4 +17,12 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+});
+Route::get('admin', [AuthController::class, 'index']);
+Route::post('admin/auth', [AuthController::class, 'login'])->name('admin.auth');
+
+Route::group(['middleware' => 'admin_auth'], function () {
+    Route::get('admin/dashboard', [AuthController::class, 'dashboard']);
+    Route::get('admin/product', [ProductController::class, 'index']);
+    Route::get('admin/product/manage_product', [ProductController::class, 'manage_product']);
 });
