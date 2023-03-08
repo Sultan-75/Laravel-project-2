@@ -57,7 +57,7 @@
         <aside class="menu-sidebar d-none d-lg-block">
             <div class="logo">
                 <a href="#">
-                    <img src="{{ asset('admin_assets/images/icon/logo.png') }}" alt="Cool Admin" />
+                    <img src="{{ asset('admin_assets/images/icon/logo.png') }}" alt="Admin" />
                 </a>
             </div>
             <div class="menu-sidebar__content js-scrollbar1">
@@ -99,7 +99,7 @@
                                             </div>
                                         </div>
                                         <div class="account-dropdown__footer">
-                                            <a href="">
+                                            <a href="{{ url('admin/logout') }}">
                                                 <i class="fas fa-sign-out-alt"></i>Logout</a>
                                         </div>
                                     </div>

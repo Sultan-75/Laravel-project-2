@@ -26,3 +26,11 @@ Route::group(['middleware' => 'admin_auth'], function () {
     Route::get('admin/product', [ProductController::class, 'index']);
     Route::get('admin/product/manage_product', [ProductController::class, 'manage_product']);
 });
+
+Route::get('admin/logout', function () {
+    session()->forget('ADMIN_LOGIN', true);
+    session()->forget('ADMIN_ID');
+    session()->forget('ADMIN_NAME');
+    session()->flash('error', 'Logout Successfully');
+    return redirect('admin');
+});

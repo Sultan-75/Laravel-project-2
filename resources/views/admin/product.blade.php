@@ -20,7 +20,7 @@
             </div>
         @endif
 
-        <div class="table-responsive table--no-card m-b-30 py-1 px-1">
+        <div class="table-responsive table--no-card m-b-30 py-1 px-1 border border-danger">
             <table class="table table-borderless table-striped table-earning" id="dataTableHover">
                 <thead>
                     <tr>
