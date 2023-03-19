@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Auth;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class AuthController extends Controller
 {
@@ -34,6 +35,8 @@ class AuthController extends Controller
     }
     public function dashboard()
     {
-        return view('admin.dashboard');
+        $result['c_data'] = DB::table('products')->count();
+        $result['a_data'] = DB::table('auths')->count();
+        return view('admin.dashboard', $result);
     }
 }

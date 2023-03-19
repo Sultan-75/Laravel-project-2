@@ -1256,6 +1256,7 @@ section {
 @media (max-width: 991px) {
     .logo {
         text-align: center;
+        width: 30% !important;
     }
 }
 
@@ -1611,7 +1612,7 @@ section {
     overflow-y: auto;
 }
 .menu-sidebar .logo img {
-    width: 70%;
+    width: 50%;
     height: auto;
 }
 .menu-sidebar .logo {
@@ -1715,7 +1716,7 @@ section {
     padding: 0;
     line-height: 1;
     vertical-align: top;
-    background: #fff;
+    background: #d6c4c4;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;

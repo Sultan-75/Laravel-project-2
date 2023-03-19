@@ -30,7 +30,8 @@
                         </a>
                         <button class="hamburger hamburger--slider" type="button">
                             <span class="hamburger-box">
-                                <span class="hamburger-inner"></span>
+
+                                <i class="fa fa-bars" style="color: #0a0a0a;"></i>
                             </span>
                         </button>
                     </div>
@@ -46,6 +47,10 @@
                         <li>
                             <a href="{{ url('admin/category') }}">
                                 <i class="fas fa-chart-bar"></i>Product</a>
+                        </li>
+                        <li class="@yield('product_select-2')">
+                            <a href="{{ url('admin/product/manage_product') }}">
+                                <i class="fas fa-plus"></i>Add Product</a>
                         </li>
                     </ul>
                 </div>
@@ -69,7 +74,11 @@
                         </li>
                         <li class="@yield('product_select')">
                             <a href="{{ url('admin/product') }}">
-                                <i class="fas fa-list"></i>Product</a>
+                                <i class="fas fa-list"></i>Product List</a>
+                        </li>
+                        <li class="@yield('product_select-2')">
+                            <a href="{{ url('admin/product/manage_product') }}">
+                                <i class="fas fa-plus"></i>Add Product</a>
                         </li>
 
                     </ul>

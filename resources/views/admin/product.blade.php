@@ -27,9 +27,10 @@
                         <th>S.N</th>
                         <th>Product Name</th>
                         <th>Price</th>
-                        <th>Size</th>
                         <th>Product Image</th>
-                        <th>Description</th>
+                        <th>Brand</th>
+                        <th>Scent</th>
+                        <th>Age Range</th>
                         <th>Status</th>
                         <th>Action</th>
 
@@ -37,31 +38,54 @@
                 </thead>
                 <tbody>
 
+                    @php
+                        $i = 1;
+                    @endphp
+                    @foreach ($data as $item)
+                        <tr>
+                            <td>{{ $i++ }}</td>
+                            <td>{{ $item->product_name }}</td>
+                            <td>{{ $item->product_price }}</td>
+                            <td>
+                                <img width="100px" src="{{ asset('storage/media/product/' . $item->product_image) }}" />
+                            </td>
+                            <td>{{ $item->product_brand }}</td>
+                            <td>{{ $item->product_scent }}</td>
+                            <td>{{ $item->age_range }}</td>
+                            <td>
+                                @if ($item->status == 1)
+                                    <a href="{{ url('admin/product/status/0') }}/{{ $item->id }}"
+                                        class="text-decoration-none mr-2">
+                                        <button class="btn btn-success btn-sm">
+                                            Active
+                                        </button>
+                                    </a>
+                                @elseif ($item->status == 0)
+                                    <a href="{{ url('admin/product/status/1') }}/{{ $item->id }}"
+                                        class="text-decoration-none mr-2">
+                                        <button class="btn btn-warning btn-sm">
+                                            Deactive
+                                        </button>
+                                    </a>
+                                @endif
 
-                    <tr>
-                        <td>1</td>
-                        <td>11</td>
-                        <td>22</td>
-                        <td>22</td>
-                        <td>22</td>
-                        <td>22</td>
-                        <td>
-
-                            222
-                        </td>
-                        <td>
-                            <a href="" class="text-decoration-none mr-2">
-                                <button class="btn btn-info">
-                                    <i class="fa fa-edit fa-lg"></i>
-                                </button>
-                            </a>
-                            <a href="" class="text-decoration-none">
-                                <button class="btn btn-danger">
-                                    <i class="fa fa-trash fa-lg"></i>
-                                </button>
-                            </a>
-                        </td>
-                    </tr>
+                            </td>
+                            <td>
+                                <a href="{{ url('admin/product/manage_product') }}/{{ $item->id }}"
+                                    class="text-decoration-none mr-2">
+                                    <button class="btn btn-info">
+                                        <i class="fa fa-edit fa-lg"></i>
+                                    </button>
+                                </a>
+                                <a href="{{ url('admin/product/delete') }}/{{ $item->id }}"
+                                    class="text-decoration-none">
+                                    <button class="btn btn-danger">
+                                        <i class="fa fa-trash fa-lg"></i>
+                                    </button>
+                                </a>
+                            </td>
+                        </tr>
+                    @endforeach
 
                 </tbody>
             </table>
