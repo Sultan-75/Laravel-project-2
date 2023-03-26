@@ -20,7 +20,7 @@
             </div>
         @endif
 
-        <div class="table-responsive table--no-card m-b-30 py-1 px-1 border border-danger">
+        <div class="table-responsive table--no-card m-b-30 py-2 px-2">
             <table class="table table-borderless table-striped table-earning" id="dataTableHover">
                 <thead>
                     <tr>
@@ -33,6 +33,7 @@
                         <th>Age Range</th>
                         <th>Status</th>
                         <th>Action</th>
+                        <th>click</th>
 
                     </tr>
                 </thead>
@@ -84,6 +85,13 @@
                                     </button>
                                 </a>
                             </td>
+                            <td>
+                                <a href="{{ $item->url }}" target="_blank"
+                                    class="btn btn-warning btn-sm text-decoration-none mr-2">
+                                    Click
+                                </a>
+                            </td>
+
                         </tr>
                     @endforeach
 

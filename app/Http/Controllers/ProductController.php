@@ -26,6 +26,7 @@ class ProductController extends Controller
             $result['product_brand'] = $arr['0']->product_brand;
             $result['product_scent'] = $arr['0']->product_scent;
             $result['age_range'] = $arr['0']->age_range;
+            $result['url'] = $arr['0']->url;
             $result['id'] = $arr['0']->id;
         } else {
             $result['product_name'] = '';
@@ -34,6 +35,7 @@ class ProductController extends Controller
             $result['product_brand'] = "";
             $result['product_scent'] = "";
             $result['age_range'] = "";
+            $result['url'] = "";
             $result['id'] = 0;
         }
         return view('admin.manage_product', $result);
@@ -69,6 +71,7 @@ class ProductController extends Controller
         $model->product_brand = $request->post('product_brand');
         $model->product_scent = $request->post('product_scent');
         $model->age_range = $request->post('age_range');
+        $model->url = $request->post('url');
         $model->status = 1;
         $model->save();
         $request->session()->flash('message', $msg);

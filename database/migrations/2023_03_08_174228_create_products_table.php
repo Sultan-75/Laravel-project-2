@@ -22,6 +22,7 @@ class CreateProductsTable extends Migration
             $table->string("product_scent");
             $table->string("age_range");
             $table->string("status");
+            $table->string("url");
             $table->timestamps();
         });
     }

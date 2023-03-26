@@ -70,6 +70,13 @@
                                     class="form-control" aria-required="true" aria-invalid="false" required>
                             </div>
                         </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="url" class="control-label mb-1">Amazon Url Link</label>
+                                <input id="url" name="url" type="text" value="{{ $url }}"
+                                    class="form-control" aria-required="true" aria-invalid="false" required>
+                            </div>
+                        </div>
                     </div>
                     <input type="hidden" name="id" value="{{ $id }}">
                 </div>
