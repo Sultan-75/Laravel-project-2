@@ -74,9 +74,8 @@
             </div>
         </div>
     </div>
-
     <!--  carousel for product images -->
-    <div class="container mb-4">
+    <div class="container mb-3">
         <div class="owl-carousel">
             <div class="card __custom_card mb-4">
                 <div class="card-body">
@@ -135,8 +134,60 @@
             </div>
         </div>
     </div>
-    <!--  carousel -->
+    <!--  end carousel -->
+    <div class="container-fluid py-3">
+        <div class="alert alert-light" role="alert">
+            <strong class="text-center">
+                <h3>OPTIONAL PRODUCTS</h3>
+            </strong>
 
+        </div>
+    </div>
+    <!--  carousel for normal product images -->
+    <div class="container mb-4">
+        <div class="owl-two owl-carousel">
+            <div class="card __custom_card mb-4">
+                <div class="card-body">
+                    <a href="product_details.html">
+                        <img class="img-fluid" src="{{ asset('front_assets/img/22.jpeg') }}" alt="Card image cap" />
+                    </a>
+                </div>
+
+            </div>
+            <div class="card __custom_card mb-4">
+                <div class="card-body">
+                    <a href="product_details.html">
+                        <img class="img-fluid" src="{{ asset('front_assets/img/33.jpeg') }}" alt="Card image cap" />
+                    </a>
+                </div>
+
+            </div>
+            <div class="card __custom_card mb-4">
+                <div class="card-body">
+                    <a href="product_details.html">
+                        <img class="img-fluid" src="{{ asset('front_assets/img/11.jpeg') }}" alt="Card image cap" />
+                    </a>
+                </div>
+
+            </div>
+            <div class="card __custom_card mb-4">
+                <div class="card-body">
+                    <a href="product_details.html">
+                        <img class="img-fluid" src="{{ asset('front_assets/img/22.jpeg') }}" alt="Card image cap" />
+                    </a>
+                </div>
+
+            </div>
+            <div class="card __custom_card mb-4">
+                <div class="card-body">
+                    <a href="product_details.html">
+                        <img class="img-fluid" src="{{ asset('front_assets/img/33.jpeg') }}" alt="Card image cap" />
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
     <div class="container-fluid Instagram d-flex justify-content-center align-item-center">
         <div class="container text-center">
             <h3 class="text-light font-weight-bold text-uppercase mt-4">
