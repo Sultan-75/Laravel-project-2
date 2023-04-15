@@ -5,8 +5,10 @@
     <!--Section: Contact -->
     <section class="contact">
         <div class="container">
-            <div class="text-center my-2">
-                <h2 class="font-weight-bold">Contact Us</h2>
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="my-5 font-weight-bold text-center">Contact Us</h3>
+                </div>
             </div>
             <div class="row mb-3">
                 <div class="col-md-6 mt-5 mt-lg-0 d-flex">

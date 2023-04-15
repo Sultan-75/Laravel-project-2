@@ -77,61 +77,20 @@
     <!--  carousel for product images -->
     <div class="container mb-3">
         <div class="owl-carousel">
-            <div class="card __custom_card mb-4">
-                <div class="card-body">
-                    <a href="product_details.html">
-                        <img class="img-fluid" src="{{ asset('front_assets/img/22.jpeg') }}" alt="Card image cap" />
-                    </a>
+            @foreach ($home_product as $list)
+                <div class="card __custom_card mb-4">
+                    <div class="card-body">
+                        <a href="product_details.html">
+                            <img class="img-fluid" src="{{ asset('storage/media/product/' . $list->product_image) }}"
+                                alt="Card image cap" />
+                        </a>
+                    </div>
+                    <div class="card-footer">
+                        <a href="{{ $list->url }}" target="_blank" class="btn btn-md-sm __btn-accent float-right">
+                            Buy Now</a>
+                    </div>
                 </div>
-                <div class="card-footer">
-                    <a href="" class="btn btn-md-sm __btn-accent float-right">
-                        Buy Now</a>
-                </div>
-            </div>
-            <div class="card __custom_card mb-4">
-                <div class="card-body">
-                    <a href="product_details.html">
-                        <img class="img-fluid" src="{{ asset('front_assets/img/33.jpeg') }}" alt="Card image cap" />
-                    </a>
-                </div>
-                <div class="card-footer">
-                    <a href="" class="btn btn-md-sm __btn-accent float-right">
-                        Buy Now</a>
-                </div>
-            </div>
-            <div class="card __custom_card mb-4">
-                <div class="card-body">
-                    <a href="product_details.html">
-                        <img class="img-fluid" src="{{ asset('front_assets/img/11.jpeg') }}" alt="Card image cap" />
-                    </a>
-                </div>
-                <div class="card-footer">
-                    <a href="" class="btn btn-md-sm __btn-accent float-right">
-                        Buy Now</a>
-                </div>
-            </div>
-            <div class="card __custom_card mb-4">
-                <div class="card-body">
-                    <a href="product_details.html">
-                        <img class="img-fluid" src="{{ asset('front_assets/img/22.jpeg') }}" alt="Card image cap" />
-                    </a>
-                </div>
-                <div class="card-footer">
-                    <a href="" class="btn btn-md-sm __btn-accent float-right">
-                        Buy Now</a>
-                </div>
-            </div>
-            <div class="card __custom_card mb-4">
-                <div class="card-body">
-                    <a href="product_details.html">
-                        <img class="img-fluid" src="{{ asset('front_assets/img/33.jpeg') }}" alt="Card image cap" />
-                    </a>
-                </div>
-                <div class="card-footer">
-                    <a href="" class="btn btn-md-sm __btn-accent float-right">
-                        Buy Now</a>
-                </div>
-            </div>
+            @endforeach
         </div>
     </div>
     <!--  end carousel -->
@@ -140,7 +99,6 @@
             <strong class="text-center">
                 <h3>OPTIONAL PRODUCTS</h3>
             </strong>
-
         </div>
     </div>
     <!--  carousel for normal product images -->

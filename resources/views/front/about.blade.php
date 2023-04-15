@@ -6,10 +6,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="alert alert-primary" role="alert">
-                        <strong>primary</strong>
-                    </div>
-                    <h3 class="my-4 font-weight-bold">ABOUT US</h3>
+                    <h3 class="my-5 font-weight-bold text-center">ABOUT US</h3>
                 </div>
             </div>
             <div class="row mb-3">
