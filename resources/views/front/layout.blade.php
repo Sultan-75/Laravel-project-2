@@ -189,7 +189,7 @@
 
         <!-- Copyright -->
         <div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.05)">
-            © 2020-2021 Copyright Rosemountperfumes
+            © 2020-{{ now()->year }} Copyright Rosemountperfumes
             <p class="mt-1">
                 Developed by<span class="font-weight-bold text-danger">Triangle</span>
             </p>

@@ -15,17 +15,19 @@
         <div class="row">
             @foreach ($all_product as $list)
                 <div class="col-md-4">
-                    <div class="w-75 mx-auto card __custom_card card-block px-3 pt-3 pb-1 my-3">
-                        <img class="mb-0 img-fluid" src="{{ asset('storage/media/product/' . $list->product_image) }}"
-                            alt="Product-image" style="height:300px" />
-                        <div class="card-body mt-0">
-                            <p class="card-title my-1">{{ $list->product_name }}</p>
-                            <div class="d-flex justify-content-between">
-                                <p class="text-danger">AED{{ $list->product_price }}</p>
-                                <a href="{{ $list->url }}" target="_blank" class="btn btn-primary">Buy Now</a>
+                    <a href="{{ url('/product/details') }}/{{ $list->id }}" class="text-decoration-none">
+                        <div class="w-75 mx-auto card __custom_card card-block px-3 pt-3 pb-1 my-3">
+                            <img class="mb-0 img-fluid" src="{{ asset('storage/media/product/' . $list->product_image) }}"
+                                alt="Product-image" style="height:300px" />
+                            <div class="card-body mt-0">
+                                <p class="card-title my-1">{{ $list->product_name }}</p>
+                                <div class="d-flex justify-content-between">
+                                    <p class="text-danger">AED{{ $list->product_price }}</p>
+                                    <a href="{{ $list->url }}" target="_blank" class="btn btn-primary">Buy Now</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             @endforeach
         </div>

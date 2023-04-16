@@ -29,4 +29,11 @@ class FrontController extends Controller
             ->get();
         return view('front.products', $result);
     }
+    public function product_details($id)
+    {
+        $result['single_product'] = DB::table('products')
+            ->where(['id' => $id])
+            ->get();
+        return view('front.product_details', $result);
+    }
 }
