@@ -37,6 +37,7 @@ class AuthController extends Controller
     {
         $result['c_data'] = DB::table('products')->count();
         $result['a_data'] = DB::table('auths')->count();
+        $result['s_data'] = DB::table('samples')->count();
         return view('admin.dashboard', $result);
     }
 }

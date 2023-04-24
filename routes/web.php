@@ -3,6 +3,7 @@
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\FrontController;
+use App\Http\Controllers\SamplesController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -34,6 +35,11 @@ Route::group(['middleware' => 'admin_auth'], function () {
     Route::post('admin/product/manage_product_process', [ProductController::class, 'manage_product_process'])->name('product.manage_product_process');
     Route::get('admin/product/delete/{id}', [ProductController::class, 'delete']);
     Route::get('admin/product/status/{status}/{id}', [ProductController::class, 'status']);
+
+    Route::get('admin/sample', [SamplesController::class, 'index']);
+    Route::get('admin/sample/manage_sample', [SamplesController::class, 'manage_sample']);
+    Route::post('admin/sample/manage_sample_process', [SamplesController::class, 'manage_sample_process'])->name('sample.manage_sample_process');
+    Route::get('admin/sample/delete/{id}', [SamplesController::class, 'delete']);
 });
 
 Route::get('admin/logout', function () {

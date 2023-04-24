@@ -12,13 +12,11 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card">
-                            <h5 class="card-header font-weight-light">Products</h5>
+                            <h5 class="card-header font-weight-light">Overview</h5>
                             <div class="card-body">
-                                <ul>
-                                    <li>JQuery</li>
-                                    <li>Bootstrap 4.3</li>
-                                    <li>FontAwesome</li>
-                                </ul>
+                                <h5 class="card-title text-danger">Total Products</h5>
+                                <hr>
+                                <p class="card-text h4">{{ $c_data }}</p>
                             </div>
                         </div>
                     </div>
@@ -26,9 +24,9 @@
                         <div class="card text-danger bg-light  mb-3">
                             <div class="card-header h5">Overview</div>
                             <div class="card-body">
-                                <h5 class="card-title text-danger">Total Products</h5>
+                                <h5 class="card-title text-danger">Sample Products</h5>
                                 <hr>
-                                <p class="card-text h4">{{ $c_data }}</p>
+                                <p class="card-text h4">{{ $s_data }}</p>
                             </div>
                         </div>
                     </div>

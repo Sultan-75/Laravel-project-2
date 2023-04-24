@@ -57,9 +57,9 @@
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="{{ url('admin/product') }}">All Product List</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#top">Add Optional Product</a>
+                        <a class="dropdown-item" href="{{ url('admin/sample/manage_sample') }}">Add Sample Product</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#top">Optional Product List</a>
+                        <a class="dropdown-item" href="{{ url('admin/sample') }}">Sample Product List</a>
                     </div>
                 </li>
                 <!-- Smaller devices menu END -->
@@ -109,24 +109,26 @@
                 </div>
                 <!-- Separator with title -->
                 <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed">
-                    <small>OPTIONAL ITEMS</small>
+                    <small>SAMPLE ITEMS</small>
                 </li>
                 <!-- /END Separator -->
                 <a href="#submenu3" data-toggle="collapse" aria-expanded="false"
                     class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
                     <div class="d-flex w-100 justify-content-start align-items-center">
                         <span class="fa fa-user fa-fw mr-3"></span>
-                        <span class="menu-collapsed">Optional Product</span>
+                        <span class="menu-collapsed">Sample Product</span>
                         <span class="submenu-icon ml-auto"></span>
                     </div>
                 </a>
                 <!-- Submenu content -->
                 <div id="submenu3" class="collapse sidebar-submenu">
-                    <a href="#" class="active list-group-item list-group-item-action bg-dark text-white">
-                        <span class="menu-collapsed">Add Optional product</span>
+                    <a href="{{ url('admin/sample/manage_sample') }}"
+                        class="active list-group-item list-group-item-action bg-dark text-white">
+                        <span class="menu-collapsed">Add Sample product</span>
                     </a>
-                    <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
-                        <span class="menu-collapsed">Optional Product List</span>
+                    <a href="{{ url('admin/sample') }}"
+                        class="list-group-item list-group-item-action bg-dark text-white">
+                        <span class="menu-collapsed">Sample Product List</span>
                     </a>
                 </div>
 
