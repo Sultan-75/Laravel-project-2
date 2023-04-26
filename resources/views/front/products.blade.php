@@ -4,26 +4,28 @@
     <!-- Product -->
     <div class="container my-2">
         <div class="row">
-            <div class="col-md-12">
-                <h3 class="text-center">All products</h3>
+            <div class="col-md-12 mb-2 mt-1">
+                <h3 class="text-center">All Products</h3>
             </div>
-            <div class="col-md-12 text-center">
-                <input type="search" class="px-3 py-1 border-0 mr-1" name="" id=""><input type="submit"
-                    class="btn btn-success" value="Search">
+            <div class="col-md-12 text-center mb-2">
+                <input type="search" class="w-50 px-4 py-2 border-0 mr-2" name="search"><input type="submit"
+                    class="btn btn-success" value="SEARCH">
             </div>
         </div>
+        <hr>
         <div class="row">
             @foreach ($all_product as $list)
                 <div class="col-md-4">
                     <a href="{{ url('/product/details') }}/{{ $list->id }}" class="text-decoration-none">
                         <div class="w-75 mx-auto card __custom_card card-block px-3 pt-3 pb-1 my-3">
-                            <img class="mb-0 img-fluid" src="{{ asset('storage/media/product/' . $list->product_image) }}"
-                                alt="Product-image" style="height:300px" />
+                            <img class="mb-0 img-fluid" style="height: 280px;width: 300px;"
+                                src="{{ asset('storage/media/product/' . $list->product_image) }}" alt="Product-image" />
                             <div class="card-body mt-0">
                                 <p class="card-title my-1">{{ $list->product_name }}</p>
                                 <div class="d-flex justify-content-between">
-                                    <p class="text-danger">AED{{ $list->product_price }}</p>
-                                    <a href="{{ $list->url }}" target="_blank" class="btn btn-primary">Buy Now</a>
+                                    <div class="text-danger">AED {{ $list->product_price }}</div>
+                                    <a href="{{ $list->url }}" target="_blank" class="btn __btn-accent px-2 py-1">Buy
+                                        Now</a>
                                 </div>
                             </div>
                         </div>

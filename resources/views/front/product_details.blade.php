@@ -9,16 +9,19 @@
             </div>
         </div>
         <!-- product -->
-        <div class="row">
-            <div class="col-md-7 col-sm-12 col-xs-12">
+        <div class="row g-0">
+            <div class="col-md-1"></div>
+            <div class="col-md-5 col-sm-12 col-xs-12">
                 <div class="mb-2">
-                    <img src="{{ asset('storage/media/product/' . $single_product[0]->product_image) }}" style="height: 500px"
-                        class="img-fluid" alt="" />
+                    <div class="card text-center">
+                        <img src="{{ asset('storage/media/product/' . $single_product[0]->product_image) }}"
+                            style="height:400px; width:500px;" class="img-fluid" alt="" />
+                    </div>
                 </div>
             </div>
 
             <div class="col-md-5 col-sm-12 col-xs-12 card py-2 px-3 mb-2">
-                <h2 class="mt-1">{{ $single_product[0]->product_name }}</h2>
+                <h2 class="">{{ $single_product[0]->product_name }}</h2>
                 <hr />
                 <h3 class="">AED {{ $single_product[0]->product_price }}</h3>
                 <hr />
@@ -39,6 +42,7 @@
                 <hr />
                 <a href="{{ $single_product[0]->url }}" class="btn btn-danger mb-3">SHOP NOW</a>
             </div>
+            <div class="col-md-1"></div>
         </div>
         <!-- end product -->
     </div>

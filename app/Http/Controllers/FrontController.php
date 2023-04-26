@@ -12,6 +12,8 @@ class FrontController extends Controller
         $result['home_product'] = DB::table('products')
             ->where(['status' => 1])
             ->get();
+        $result['sample_product'] = DB::table('samples')
+            ->get();
         return view('front.index', $result);
     }
     public function about()

@@ -80,9 +80,9 @@
             @foreach ($home_product as $list)
                 <div class="card __custom_card mb-4">
                     <div class="card-body">
-                        <a href="product_details.html">
-                            <img class="img-fluid" src="{{ asset('storage/media/product/' . $list->product_image) }}"
-                                alt="Card image cap" />
+                        <a href="#">
+                            <img class="img-fluid" style="height: 300px;width: 300px;"
+                                src="{{ asset('storage/media/product/' . $list->product_image) }}" alt="Card image cap" />
                         </a>
                     </div>
                     <div class="card-footer">
@@ -104,46 +104,16 @@
     <!--  carousel for normal product images -->
     <div class="container mb-4">
         <div class="owl-two owl-carousel">
-            <div class="card __custom_card mb-4">
-                <div class="card-body">
-                    <a href="product_details.html">
-                        <img class="img-fluid" src="{{ asset('front_assets/img/22.jpeg') }}" alt="Card image cap" />
-                    </a>
+            @foreach ($sample_product as $list_2)
+                <div class="card __custom_card mb-4">
+                    <div class="card-body">
+                        <a href="#" target="_blank">
+                            <img class="img-fluid" style="height: 300px;width: 300px;"
+                                src="{{ asset('storage/media/sample/' . $list_2->image) }}" alt="Card image cap" />
+                        </a>
+                    </div>
                 </div>
-
-            </div>
-            <div class="card __custom_card mb-4">
-                <div class="card-body">
-                    <a href="product_details.html">
-                        <img class="img-fluid" src="{{ asset('front_assets/img/33.jpeg') }}" alt="Card image cap" />
-                    </a>
-                </div>
-
-            </div>
-            <div class="card __custom_card mb-4">
-                <div class="card-body">
-                    <a href="product_details.html">
-                        <img class="img-fluid" src="{{ asset('front_assets/img/11.jpeg') }}" alt="Card image cap" />
-                    </a>
-                </div>
-
-            </div>
-            <div class="card __custom_card mb-4">
-                <div class="card-body">
-                    <a href="product_details.html">
-                        <img class="img-fluid" src="{{ asset('front_assets/img/22.jpeg') }}" alt="Card image cap" />
-                    </a>
-                </div>
-
-            </div>
-            <div class="card __custom_card mb-4">
-                <div class="card-body">
-                    <a href="product_details.html">
-                        <img class="img-fluid" src="{{ asset('front_assets/img/33.jpeg') }}" alt="Card image cap" />
-                    </a>
-                </div>
-
-            </div>
+            @endforeach
         </div>
     </div>
     <div class="container-fluid Instagram d-flex justify-content-center align-item-center">

@@ -35,9 +35,11 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="smallerscreenmenu" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">
-                        Welcome Habib Ahmed
+                        Welcome {{ session('ADMIN_NAME') }}
                     </a>
                     <div class="dropdown-menu mw-50" aria-labelledby="smallerscreenmenu">
+                        <a class="dropdown-item text-success" href="#"><i class="fa fa-globe"></i>
+                            Go To my Site</a>
                         <a class="dropdown-item text-danger" href="{{ url('admin/logout') }}"><i
                                 class="fa fa-sign-out"></i>
                             Logout</a>
@@ -108,7 +110,8 @@
                     </a>
                 </div>
                 <!-- Separator with title -->
-                <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed">
+                <li
+                    class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed">
                     <small>SAMPLE ITEMS</small>
                 </li>
                 <!-- /END Separator -->
