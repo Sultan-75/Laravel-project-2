@@ -55,10 +55,10 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a class="dropdown-item" href="#">Oriental</a>
+                                    <a class="dropdown-item" href="{{ url('/product/oriental') }}">Oriental</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">French</a>
+                                    <a class="dropdown-item" href="{{ url('/product/french') }}">French</a>
                                 </li>
                             </ul>
                         </li>

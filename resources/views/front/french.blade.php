@@ -1,17 +1,11 @@
 @extends('front/layout')
-@section('page_title', 'Products')
+@section('page_title', 'Fragrances')
 @section('container')
     <!-- Product -->
     <div class="container my-2">
         <div class="row">
             <div class="col-md-12 mb-2 mt-1">
-                <h3 class="text-center">All Products</h3>
-            </div>
-            <div class="col-md-12 text-center mb-2">
-                <form action="" method="get">
-                    <input type="search" class="w-50 px-4 py-2 border-0 mr-2" name="search"><input type="submit"
-                        class="btn btn-success" value="SEARCH">
-                </form>
+                <h3 class="text-center"> Fragrances - French</h3>
             </div>
         </div>
         <hr>

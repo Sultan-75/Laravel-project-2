@@ -24,11 +24,18 @@ class FrontController extends Controller
     {
         return view('front.contact');
     }
-    public function products()
+    public function products(Request $request)
     {
-        $result['all_product'] = DB::table('products')
-            ->where(['status' => 1])
-            ->get();
+        $search = $request['search'];
+        if ($search != "") {
+            $result['all_product'] = DB::table('products')
+                ->where('product_name', 'LIKE', "%$search%")
+                ->get();
+        } else {
+            $result['all_product'] = DB::table('products')
+                ->where(['status' => 1])
+                ->get();
+        }
         return view('front.products', $result);
     }
     public function product_details($id)
@@ -37,5 +44,19 @@ class FrontController extends Controller
             ->where(['id' => $id])
             ->get();
         return view('front.product_details', $result);
+    }
+    public function oriental()
+    {
+        $result['all_product'] = DB::table('products')
+            ->where(['product_scent' => 'Orientel'])
+            ->get();
+        return view('front.oriental', $result);
+    }
+    public function french()
+    {
+        $result['all_product'] = DB::table('products')
+            ->where(['product_scent' => 'French'])
+            ->get();
+        return view('front.oriental', $result);
     }
 }

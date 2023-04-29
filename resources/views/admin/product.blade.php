@@ -1,6 +1,6 @@
-@extends('admin/layout');
-@section('page_title', 'Product');
-@section('product_select', 'active');
+@extends('admin/layout')
+@section('page_title', 'Product')
+@section('product_select', 'active')
 @section('container')
     <div class="col">
         <div class="row">

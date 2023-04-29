@@ -69,7 +69,7 @@ class ProductController extends Controller
         $model->product_name = $request->post('product_name');
         $model->product_price = $request->post('product_price');
         $model->product_brand = $request->post('product_brand');
-        $model->product_scent = $request->post('product_scent');
+        $model->product_scent = ucfirst($request->post('product_scent'));
         $model->age_range = $request->post('age_range');
         $model->url = $request->post('url');
         $model->status = 1;

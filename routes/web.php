@@ -22,6 +22,8 @@ Route::get('/about', [FrontController::class, 'about']);
 Route::get('/contact', [FrontController::class, 'contact']);
 Route::get('/products', [FrontController::class, 'products']);
 Route::get('/product/details/{id}', [FrontController::class, 'product_details']);
+Route::get('/product/oriental', [FrontController::class, 'oriental']);
+Route::get('/product/french', [FrontController::class, 'french']);
 
 Route::get('admin', [AuthController::class, 'index']);
 Route::post('admin/auth', [AuthController::class, 'login'])->name('admin.auth');
