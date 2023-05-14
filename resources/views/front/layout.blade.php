@@ -41,7 +41,7 @@
                     </span>
                 </button>
                 <div class="collapse navbar-collapse bg-light" id="navbarScroll">
-                    <ul class="navbar-nav ml-auto my-2 my-lg-0 navbar-nav-scroll">
+                    <ul class="navbar-nav ml-auto my-2 my-lg-0 navbar-nav-scroll text-uppercase">
                         <li class="nav-item active">
                             <a class="nav-link" href="{{ url('/') }}">Home </a>
                         </li>
@@ -94,17 +94,20 @@
                     <div class="col-md-6">
                         <!-- Right -->
                         <div class="mx-auto mt-2">
-                            <a href="" class="mx-2 text-center btn __socail-icon __fb">
+                            <a href="https://www.facebook.com/mdhabib.rahmam?mibextid=LQQJ4d" target="_blank"
+                                class="mx-2 text-center btn __socail-icon __fb">
                                 <i class="fa fa-facebook-f fa-2x"></i>
                             </a>
-                            <a href="" class="mx-2 text-center btn __socail-icon __twitte">
+                            <a href="#" class="mx-2 text-center btn __socail-icon __twitte" target="_blank">
                                 <i class="fa fa-twitter fa-2x r"></i>
                             </a>
 
-                            <a href="" class="mx-2 text-center btn __socail-icon __whatsapp">
+                            <a href="https://wa.me/+971566724444" class="mx-2 text-center btn __socail-icon __whatsapp"
+                                target="_blank">
                                 <i class="fa fa-whatsapp fa-2x"></i>
                             </a>
-                            <a href="" class="mx-2 text-center btn __socail-icon __linkedin">
+                            <a href="https://www.linkedin.com/in/md-habibur-rahman-950a5679/"
+                                class="mx-2 text-center btn __socail-icon __linkedin" target="_blank">
                                 <i class="fa fa-linkedin fa-2x"></i>
                             </a>
                         </div>
@@ -121,7 +124,7 @@
                 <!-- Grid row -->
                 <div class="row mt-3">
                     <!-- Grid column -->
-                    <div class="col-md-3 col-lg-4 col-xl-3 mb-3">
+                    <div class="col-md-3 mb-3">
                         <!-- Content -->
                         <h6 class="text-uppercase fw-bold mb-4">Rosemount Perfumes</h6>
                         <p class="text-justify">
@@ -134,7 +137,7 @@
                     <!-- Grid column -->
 
                     <!-- Grid column -->
-                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-3">
+                    <div class="col-md-2 mx-auto mb-3">
                         <!-- Links -->
                         <h6 class="text-uppercase fw-bold mb-4">Products</h6>
                         <p>
@@ -150,35 +153,38 @@
                     <!-- Grid column -->
 
                     <!-- Grid column -->
-                    <div class="col-md-3 col-lg-2 col-xl-2 mb-3">
+                    <div class="col-md-3  mb-3">
                         <!-- Links -->
                         <h6 class="text-uppercase fw-bold mb-3">Useful links</h6>
                         <p>
-                            <a href="#!" class="text-reset text-decoration-none">Home</a>
+                            <a href="{{ url('/') }}" class="text-reset text-decoration-none">Home</a>
                         </p>
                         <p>
-                            <a href="#!" class="text-reset text-decoration-none">About</a>
+                            <a href="{{ url('/about') }}" class="text-reset text-decoration-none">About</a>
                         </p>
                         <p>
-                            <a href="#!" class="text-reset text-decoration-none">Contact</a>
+                            <a href="{{ url('/contact') }}" class="text-reset text-decoration-none">Contact</a>
                         </p>
                         <p>
-                            <a href="#!" class="text-reset text-decoration-none">Product</a>
+                            <a href="{{ url('/products') }}" class="text-reset text-decoration-none">Product</a>
                         </p>
                     </div>
                     <!-- Grid column -->
 
                     <!-- Grid column -->
-                    <div class="col-md-4 col-lg-3 col-xl-3 mb-3">
+                    <div class="col-md-4 mb-3">
                         <!-- Links -->
                         <h6 class="text-uppercase fw-bold mb-3">Contact</h6>
-                        <p><i class="fa fa-home"></i> Dubai City, Dubai</p>
-                        <p>
-                            <i class="fa fa-envelope"></i>
-                            info@Rosemountperfumes.com
+                        <p class="text-start"><i class="fa fa-home"></i> SHED NO.-05 Al JURF -2 BEHIND AJMAN FIRE
+                            STATIONS , AJMAN .
+                            UAE</p>
+                        <p class="text-center">
+                            <i class="fa fa-envelope"> habib@rosemountperfumes.com | info@rosemountperfumes.com |
+                                info.jabalalward@gmail.com</i>
                         </p>
-                        <p><i class="fa fa-phone"></i> + 97 234 567 88</p>
-                        <p><i class="fa fa-whatsapp"></i> + 97 234 567 89</p>
+                        <p class="text-center mb-0"><i class="fa fa-phone"></i> +97160000000</p>
+                        <p class="text-center mb-0"><i class="fa fa-mobile"></i>+971566724444 | +971547393287</p>
+                        <p class="text-center mb-0"><i class="fa fa-whatsapp"> </i>+971-56-6724444</p>
                     </div>
                     <!-- Grid column -->
                 </div>

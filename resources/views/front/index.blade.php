@@ -122,10 +122,12 @@
                 Follow us on Instagram
             </h3>
             <div class="__insta-profile">
-                <a href="" class="text-light">@rosemount_perfumes</a>
+                <a href="https://www.instagram.com/rosemount_brag_perfumes/?igshid=NTc4MTIwNjQ2YQ%3D%3D" target="_blank"
+                    class="text-light">@rosemount_perfumes</a>
             </div>
             <div class="mt-3">
-                <a href="" class="btn btn-lg __btn-accent ml-3"><i class="fa fa-instagram"></i> Follow on
+                <a href="https://www.instagram.com/rosemount_brag_perfumes/?igshid=NTc4MTIwNjQ2YQ%3D%3D" target="_blank"
+                    class="btn btn-lg __btn-accent ml-3"><i class="fa fa-instagram"></i> Follow on
                     Instagram</a>
             </div>
         </div>

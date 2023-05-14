@@ -11,7 +11,7 @@
             </div>
             <div class="row mb-3">
                 <div class="col-md-6 mb-3">
-                    <img class="img-fluid" src="{{ asset('front_assets/img/abuut-bnr.png') }}" alt="" />
+                    <img class="img-fluid" src="{{ asset('front_assets/img/about.jpeg') }}" alt="" />
                 </div>
                 <div class="col-md-6">
                     <p class="mx-2 text-dark">
@@ -19,8 +19,7 @@
                         imminence, is the finest brand from Rosemount perfumes. ROSEMOUNT
                         defines lifestyle and caters through its best in class perfumes
                         which not only pampers but helps men and women cherish their life
-                        every day. Through a relentless persuse to satisfy many airs taste
-                        and fashion. We offer unforgettable creations through elegant
+                        every day. We offer unforgettable creations through elegant
                         perfumes for all.
                     </p>
                     <p class="mx-2 text-dark">
@@ -30,10 +29,8 @@
                         inspiration to exhibit such a passion, each day. There is many
                         traits and characteristics which connects and individual to a
                         specific aroma and imminence. Such an aroma becomes an incredible
-                        driving substance of energy. ROSEMOUNT takes pleasure in
-                        facilitating people of every kind and preferences to stay
-                        passionate and thriving in life through our collection. It has to
-                        be the creation from ROSEMOUNT when it’s all about renewed energy
+                        driving substance of energy. It has to be the creation from ROSEMOUNT when it’s all about renewed
+                        energy
                         with each perfume and aroma, time and again....
                     </p>
                 </div>
@@ -43,9 +40,7 @@
                         ROSEMOUNT perfumes were conceptualized by MD HABIBUR RAHMAN way
                         back in 2007. Being a highly acclaimed visionary, Mr Md habibur
                         Rahman had a dream to create high quality perfumes for the
-                        regional customers in the Middle East. A small company was
-                        transformed into a formidable regional player with its exports to
-                        major GCC countries. The company has been maturing in style,
+                        regional customers in the Middle East. The company has been maturing in style,
                         composure and quality which created an incredible value among its
                         customers, providing to be excellence and superior to any other in
                         the segment. To keep the legacy moving, the company launched
